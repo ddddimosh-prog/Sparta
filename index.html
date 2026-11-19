@@ -111,6 +111,20 @@ footer small{color:var(--muted)}
 .tabs button:hover{background:var(--red)}
 .tabs button.on{background:var(--red2);border-color:var(--red2)}
 #about{padding-bottom:70px}
+  .ab-info{margin-top:26px;font-family:Arial,Helvetica,sans-serif;max-width:720px}
+.ab-row{display:flex;align-items:center;gap:18px;font-size:clamp(17px,2vw,22px);color:#fff;margin-bottom:22px}
+.ab-row svg{width:30px;height:30px;flex:none;fill:none;stroke:var(--red2);stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.ab-row.addr{margin-bottom:34px}
+.ab-row.ph{font-weight:700;margin-bottom:16px}
+.ab-row.hrs{color:var(--muted);margin-bottom:34px}
+.ab-row a:hover{color:var(--red2)}
+.ab-btns{display:flex;flex-wrap:wrap;gap:22px}
+.ab-btn{display:inline-flex;align-items:center;justify-content:center;gap:12px;padding:0 42px;height:72px;border-radius:40px;font-weight:700;font-size:19px;background:var(--red2);color:#fff;border:2px solid var(--red2);transition:.2s}
+.ab-btn svg{width:22px;height:22px;fill:none;stroke:#fff;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.ab-btn:hover{background:#fff;color:var(--red2);border-color:#fff}
+.ab-btn:hover svg{stroke:var(--red2)}
+.ab-btn.out{background:transparent;border-color:#fff}
+.ab-btn.out:hover{background:#fff;color:#05070b}
 </style>
 </head>
 <body>
@@ -136,7 +150,33 @@ footer small{color:var(--muted)}
 
   <section id="about">
     <h2>О <em>нас</em></h2>
-    <p class="lead">Познакомьтесь с Sparta Fitness: боксёрский зал, тренажёрный зал, зона спортивного питания, а также наши победы и опыт в чемпионатах.</p>
+    <div class="ab-info">
+  <div class="ab-row addr">
+    <svg viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+    <span>Улица Толе би, 70a, 2 этаж.</span>
+  </div>
+  <div class="ab-row ph">
+    <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+    <a href="tel:+70000000000">+7 (000)000 00 00</a>
+  </div>
+  <div class="ab-row">
+    <svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+    <a href="mailto:хххх@gmail.com">хххх@gmail.com</a>
+  </div>
+  <div class="ab-row hrs">
+    <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+    <span>Пн-Вс: 10:00-22:00 </span>
+  </div>
+  <div class="ab-btns"><a class="ab-btn" href="https://wa.me/77714842858?text=Здравствуйте!%20Хочу%20узнать%20о%20тренировках%20в%20Sparta%20Fitness" target="_blank" rel="noopener">Связаться с клубом</a>
+  <a class="ab-btn out" href="https://2gis.kz/" target="_blank" rel="noopener">Найти в 2GIS</a>
+  </div>
+  <div class="ab-btns" style="margin-top:28px">
+    <a class="ab-btn" href="tel:+70000000000">
+      <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      Позвонить в клуб
+    </a>
+  </div>
+</div>
     <div class="viewer" id="viewer">
     <div class="pic p1" data-i="0"><span class="ph-tag">ФОТО ЗОНЫ</span></div><div class="pic p2" data-i="1"><span class="ph-tag">ФОТО ЗОНЫ</span></div><div class="pic p3" data-i="2"><span class="ph-tag">ФОТО ЗОНЫ</span></div>
     <div class="pic p4" data-i="3"><span class="ph-tag">ФОТО ЗОНЫ</span></div>
